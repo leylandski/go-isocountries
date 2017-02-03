@@ -1,4 +1,4 @@
-package locale
+package isocountries
 
 import (
 	"logutil"
