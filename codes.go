@@ -1,7 +1,6 @@
 package isocountries
 
 import (
-	"logutil"
 	"unicode/utf8"
 )
 
@@ -266,9 +265,6 @@ const (
 IsValidIsoCC returns a boolean denoting whether the given string appears in the list of ISO country code constants.
 */
 func IsValidIsoCC(code CountryCode) bool {
-
-	logutil.LogFuncEntry()
-	defer logutil.LogFuncExit()
 
 	if utf8.RuneCountInString(string(code)) != 3 {
 		return false
